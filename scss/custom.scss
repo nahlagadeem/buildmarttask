@@ -1,0 +1,239 @@
+$blue-bg: #00004d;
+$red-custom: #cc0000;
+
+@mixin colored-container($color) {
+  background-color: $color;
+}
+
+@mixin sizing($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin fonts($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin margins($margin, $margin-top, $margin-bottom, $margin-left, $margine-right) {
+  margin: $margin;
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+  margin-left: $margin-left;
+  margin-right: $margine-right;
+}
+
+@mixin animate($scale, $perspective) {
+  transform: scale($scale) perspective($perspective);
+}
+
+@mixin texter($color, $text-align, $position) {
+  color: $color;
+  text-align: $text-align;
+  position: $position;
+}
+
+@mixin carousels($width, $text-align) {
+  width: $width;
+  text-align: $text-align;
+}
+
+@mixin shaping($display, $background, $border, $border-radius) {
+  display: $display;
+  background: $background;
+  border: $border;
+  border-radius: $border-radius;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.direction-ltr {
+  direction: ltr;
+}
+
+.direction-rtl {
+  direction: rtl;
+}
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+  "custom-color": white,
+);
+
+// Usage
+.top-container {
+  @include colored-container($blue-bg);
+}
+
+.logo-container {
+  @include colored-container(#fff);
+}
+
+.btnred {
+  @include colored-container($red-custom);
+  @include sizing($width: 60px !important,$height: 40px !important);
+}
+
+.btnblue {
+  @include colored-container($blue-bg);
+  @include sizing($width: 120px !important, $height: 40px !important);
+  @include fonts($size: x-small, $weight: all);
+}
+
+.btnred2 {
+  @include colored-container($red-custom);
+  @include sizing($width: 100px !important, $height: 40px !important);
+}
+.btnred3 {
+  @include colored-container($red-custom);
+  @include sizing($width: 700px, $height: 40px);
+  @include margins($margin: 0 auto, $margin-top: 10px, $margin-bottom: all, $margin-left: all, $margine-right: all);
+}
+
+.btn:hover, .btn:focus > .dropdown-toggle.btn {
+  @include animate($scale: 1.2, $perspective: 1px);
+  cursor: pointer;
+}
+
+.h1 {
+  @include texter($color: $red-custom, $text-align: all, $position: all);
+  @include fonts($size: 64px, $weight: bold);
+}
+
+.h2 {
+  @include texter($color: $blue-bg, $text-align: all, $position: all);
+  @include fonts($size: 24px, $weight: bold);
+}
+
+.h3 {
+  @include texter($color: $red-custom, $text-align: all, $position: all);
+  @include fonts($size: all, $weight: bold);
+}
+
+.p {
+  @include texter($color: #000, $text-align: all, $position: all);
+}
+
+.p2 {
+  @include texter($color: $blue-bg, $text-align: all, $position: all);
+  @include fonts($size: 12px, $weight: all);
+}
+
+.p3 {
+  @include texter($color: $blue-bg, $text-align: all, $position: all);
+  @include fonts($size: 12px, $weight: all);
+}
+
+.p4 {
+  @include texter($color: $red-custom, $text-align: all, $position: all);
+  @include fonts($size: 12px, $weight: all);
+}
+
+.p2:hover {
+  @include texter($color: $red-custom, $text-align: all, $position: all);
+  cursor: pointer;
+}
+
+.carousel-caption {
+  @include carousels($width: 100, $text-align: start);
+}
+
+.carousel-caption2 {
+  @include carousels($width: 100, $text-align: end);
+}
+
+.tractor-container {
+  @include texter($color: white, $text-align: center, $position: relative);
+  @include colored-container(#fafafa);
+}
+
+.top-left {
+  @include texter($color: all, $text-align: start, $position: absolute);
+  top: 150px;
+  left: 200px;
+}
+
+.parent {
+  width: 120;
+}
+
+/* This will style any <img> element in .parent div */
+.parent img {
+  @include sizing($width: 100%, $height: 100%);
+}
+
+.list-group-item {
+  color: gray;
+}
+
+.list-group-item:hover {
+  @include texter($color: $red-custom, $text-align: all, $position: all);
+  cursor: pointer;
+}
+
+.footee:hover {
+  @include texter($color: $red-custom, $text-align: all, $position: all);
+  cursor: pointer;
+}
+
+.card {
+  @include colored-container(#fafafa);
+}
+
+.card-img-top {
+  @include sizing($width: 100%, $height: 200px);
+  object-fit: cover;
+}
+
+.yellow-container {
+  @include texter($color: all, $text-align: start, $position: relative);
+}
+
+.btn-why-us {
+  @include shaping($display: block, $background: transparent, $border: 3px solid #dedcdc, $border-radius: 50%);
+  @include sizing($width: 150px, $height: 150px);
+}
+
+.bigger:hover {
+  @include animate($scale: 1.2, $perspective: 1px);
+  cursor: pointer;
+}
+
+.bigger-card:hover {
+  @include animate($scale: 1.2, $perspective: 1px);
+  cursor: pointer;
+  color: $red-custom;
+}
+
+.btn-header {
+  @include shaping($display: block, $background: #e3e3e3, $border: 3px solid #e3e3e3, $border-radius: 50%);
+  @include sizing($width: 70px, $height: 70px);
+}
+
+.btn-lang {
+  @include shaping($display: block, $background: transparent, $border: 3px solid transparent, $border-radius: 50%);
+  @include sizing($width: 40px, $height: 40px);
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  @include shaping($display: block, $background: all, $border: all, $border-radius: all);
+  @include sizing($width: 2.375rem, $height: 2.375rem);
+  position: absolute;
+  z-index: 2;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.checked {
+  color: orange;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");

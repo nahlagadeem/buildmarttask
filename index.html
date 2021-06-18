@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Build Mart</title>
+      <link rel="stylesheet" href="./scss/custom.css">
+      <!--fa class-->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <!--slider-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+      <!--jQuery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <!--set page dir to ltr-->
+      <script type="text/javascript">
+         $('body').addClass('direction-ltr');
+      </script>
+   </head>
+   <body class="bg-custom-color" id="body">
+      <div class="row top-container text-white" style="padding-left: 150px; padding-right: 150px;">
+         <div class="col" >
+            <p style="padding-top: 10px;">Welcome to Build Mart!</p>
+         </div>
+         <div class="col">
+            <div class="row" style="padding-top: 15px; width: 200px;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bigger bi bi-facebook col" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bigger bi bi-instagram col" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bigger bi bi-twitter col" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bigger bi bi-whatsapp col" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bigger bi bi-linkedin col" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+               </svg>
+            </div>
+         </div>
+      </div>
+      <div class="logo-container" style="padding-top: 20px; padding-bottom: 20px;">
+         <div class="row text-center">
+            <div class="col">
+               <img src="./imgs/Image_001.png" style="height: 60px;"/>
+            </div>
+            <div class="col">
+               <div class="form-group has-search">
+                  <span class="form-control-feedback">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#cc0000" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                     </svg>
+                  </span>
+                  <input type="text" class="form-control" placeholder="       Search for a product or a service">
+               </div>
+            </div>
+            <div class="col">
+               <button type="button" class="btn btnblue text-white">Become a service provider</button>
+               <button class="btn btnred text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                     width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                  </svg>
+               </button>
+               <button type="button" class="btn btnred text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                     <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                  </svg>
+               </button>
+               <button type="button" class="btn btnred text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>
+               </button>
+               <div class="btn" style="width: 100px; border-radius: 100%;">
+                  <button id="myButton" style="display: block; margin-left: auto; margin-right: auto;" class="btn-lang submit-button">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" fill="#2e9e33" class="bi bi-translate" viewBox="0 0 16 16">
+                        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+                     </svg>
+                  </button>
+                  <script type="text/javascript">
+                     document.getElementById("myButton").onclick = function () {
+                         if ($('body').hasClass('direction-ltr')){
+                         $('body').removeClass('direction-ltr').addClass('direction-rtl');
+                         }else{
+                             $('body').removeClass('direction-rtl').addClass('direction-ltr');
+                         }
+                     };
+                  </script>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+         </div>
+         <div class="carousel-inner row" style="width: 100%; height: 300px; background-color: #e3e3e3;">
+            <div class="carousel-item active">
+               <div class="carousel-caption d-none d-md-block col">
+                  <h2 class="h2">Cement Pallet</h2>
+                  <h1 class="h1">Big Sale!</h1>
+                  <p class="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br>
+                     , sed diam nonummy nibh euismod tincidunt<br>
+                     ut laoreet dolore magna aliquam erat
+                  </p>
+                  <button type="button" class="btn btnred2 text-white">Shop now</button>
+               </div>
+               <div class="col d-none d-md-block" style="text-align: end;">
+                  <img src="./imgs/slide.png" style="height: 300px; width: 400px; margin-right: 150px;" alt="...">
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="carousel-caption d-none d-md-block col">
+                  <h2 class="h2">Cement Pallet</h2>
+                  <h1 class="h1">Big Sale!</h1>
+                  <p class="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br>
+                     , sed diam nonummy nibh euismod tincidunt<br>
+                     ut laoreet dolore magna aliquam erat
+                  </p>
+                  <button type="button" class="btn btnred2 text-white">Shop now</button>
+               </div>
+               <div class="col d-none d-md-block" style="text-align: end;">
+                  <img src="./imgs/slide.png" style="height: 300px; width: 400px; margin-right: 150px;" alt="...">
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="carousel-caption d-none d-md-block col">
+                  <h2 class="h2">Cement Pallet</h2>
+                  <h1 class="h1">Big Sale!</h1>
+                  <p class="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br>
+                     , sed diam nonummy nibh euismod tincidunt<br>
+                     ut laoreet dolore magna aliquam erat
+                  </p>
+                  <button type="button" class="btn btnred2 text-white">Shop now</button>
+               </div>
+               <div class="col d-none d-md-block" style="text-align: end;">
+                  <img src="./imgs/slide.png" style="height: 300px; width: 400px; margin-right: 150px;" alt="...">
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="carousel-caption d-none d-md-block col">
+                  <h2 class="h2">Cement Pallet</h2>
+                  <h1 class="h1">Big Sale!</h1>
+                  <p class="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br>
+                     , sed diam nonummy nibh euismod tincidunt<br>
+                     ut laoreet dolore magna aliquam erat
+                  </p>
+                  <button type="button" class="btn btnred2 text-white">Shop now</button>
+               </div>
+               <div class="col d-none d-md-block" style="text-align: end;">
+                  <img src="./imgs/slide.png" style="height: 300px; width: 400px; margin-right: 150px;" alt="...">
+               </div>
+            </div>
+         </div>
+      </div>
+      <br>
+      <div class="row">
+         <div class="col">
+            <div style="padding-left: 120px; padding-right: 120px;" class="row text-center">
+               <div class="col bigger">
+                  <button  style="display: block; margin-left: auto; margin-right: auto;" class="btn-header">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#00004d" class="bi bi-paint-bucket" viewBox="0 0 16 16">
+                        <path d="M6.192 2.78c-.458-.677-.927-1.248-1.35-1.643a2.972 2.972 0 0 0-.71-.515c-.217-.104-.56-.205-.882-.02-.367.213-.427.63-.43.896-.003.304.064.664.173 1.044.196.687.556 1.528 1.035 2.402L.752 8.22c-.277.277-.269.656-.218.918.055.283.187.593.36.903.348.627.92 1.361 1.626 2.068.707.707 1.441 1.278 2.068 1.626.31.173.62.305.903.36.262.05.64.059.918-.218l5.615-5.615c.118.257.092.512.05.939-.03.292-.068.665-.073 1.176v.123h.003a1 1 0 0 0 1.993 0H14v-.057a1.01 1.01 0 0 0-.004-.117c-.055-1.25-.7-2.738-1.86-3.494a4.322 4.322 0 0 0-.211-.434c-.349-.626-.92-1.36-1.627-2.067-.707-.707-1.441-1.279-2.068-1.627-.31-.172-.62-.304-.903-.36-.262-.05-.64-.058-.918.219l-.217.216zM4.16 1.867c.381.356.844.922 1.311 1.632l-.704.705c-.382-.727-.66-1.402-.813-1.938a3.283 3.283 0 0 1-.131-.673c.091.061.204.15.337.274zm.394 3.965c.54.852 1.107 1.567 1.607 2.033a.5.5 0 1 0 .682-.732c-.453-.422-1.017-1.136-1.564-2.027l1.088-1.088c.054.12.115.243.183.365.349.627.92 1.361 1.627 2.068.706.707 1.44 1.278 2.068 1.626.122.068.244.13.365.183l-4.861 4.862a.571.571 0 0 1-.068-.01c-.137-.027-.342-.104-.608-.252-.524-.292-1.186-.8-1.846-1.46-.66-.66-1.168-1.32-1.46-1.846-.147-.265-.225-.47-.251-.607a.573.573 0 0 1-.01-.068l3.048-3.047zm2.87-1.935a2.44 2.44 0 0 1-.241-.561c.135.033.324.11.562.241.524.292 1.186.8 1.846 1.46.45.45.83.901 1.118 1.31a3.497 3.497 0 0 0-1.066.091 11.27 11.27 0 0 1-.76-.694c-.66-.66-1.167-1.322-1.458-1.847z"/>
+                     </svg>
+                  </button>
+                  <p class="p3">Materials</p>
+               </div>
+               <div class="col bigger">
+                  <button  style="display: block; margin-left: auto; margin-right: auto;" class="btn-header">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#00004d" class="bi bi-truck" viewBox="0 0 16 16">
+                        <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                     </svg>
+                  </button>
+                  <p class="p3">Tools</p>
+               </div>
+               <div class="col bigger">
+                  <button  style="display: block; margin-left: auto; margin-right: auto;" class="btn-header">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#00004d" class="bi bi-wrench" viewBox="0 0 16 16">
+                        <path d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364L.102 2.223zm13.37 9.019.528.026.287.445.445.287.026.529L15 13l-.242.471-.026.529-.445.287-.287.445-.529.026L13 15l-.471-.242-.529-.026-.287-.445-.445-.287-.026-.529L11 13l.242-.471.026-.529.445-.287.287-.445.529-.026L13 11l.471.242z"/>
+                     </svg>
+                  </button>
+                  <p class="p3">Machines</p>
+               </div>
+               <div class="col bigger">
+                  <button  style="display: block; margin-left: auto; margin-right: auto;" class="btn-header">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#00004d" class="bi bi-bicycle" viewBox="0 0 16 16">
+                        <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z"/>
+                     </svg>
+                  </button>
+                  <p class="p3">Equipments</p>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div style="padding-left: 120px; padding-right: 120px;" class="row text-center">
+               <div class="col bigger">
+                  <button  style="display: block; margin-left: auto; margin-right: auto;" class="btn-header">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#cc0000" class="bi bi-palette" viewBox="0 0 16 16">
+                        <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                        <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"/>
+                     </svg>
+                  </button>
+                  <p class="p4">Designers</p>
+               </div>
+               <div class="col bigger">
+                  <button  style="display: block; margin-left: auto; margin-right: auto;" class="btn-header">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#cc0000" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                     </svg>
+                  </button>
+                  <p class="p4">Contractors</p>
+               </div>
+               <div class="col bigger">
+                  <button  style="display: block; margin-left: auto; margin-right: auto;" class="btn-header">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#cc0000" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                     </svg>
+                  </button>
+                  <p class="p4">Consultants</p>
+               </div>
+               <div class="col bigger">
+                  <button style="display: block; margin-left: auto; margin-right: auto;" class="btn-header">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#cc0000" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                        <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                     </svg>
+                  </button>
+                  <p class="p4">Sellers</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br>
+      <div class="tractor-container row" style="width: 1200px; margin:0 auto;">
+         <img src="./imgs/truck.png" class="col" alt="" style="height: 300px; width: 500px;" >
+         <div class="col" style="margin-top: 80px;">
+            <p class="p">Deere-344K</p>
+            <h1 class="h3">HIGH-PERFORMANCE</h1>
+            <p class="p" style="font-weight: bold;">to meet your highest expectations.</p>
+         </div>
+      </div>
+      <br>
+      <div class="row row-cols-1 row-cols-md-3 g-4" style="width:1000px; margin:0 auto;">
+         <div class="mb-3" style="background-color: #fafafa; max-width: 300px; margin-left: 10px;">
+            <div class="row g-0">
+               <div class="col-md-8">
+                  <div class="card-body">
+                     <h5 class="card-title">Best gadgetdiscount price</h5>
+                     <p class="card-text">Discount upto 50%!</p>
+                     <button type="button" class="btn btnred2 text-white">Shop now</button>
+                  </div>
+               </div>
+               <div class="col">
+                  <img src="./imgs/drill.png" alt="..." width="100%">
+               </div>
+            </div>
+         </div>
+         <div class="mb-3" style="background-color: #fafafa; max-width: 300px; margin-left: 10px;">
+            <div class="row g-0">
+               <div class="col-md-8">
+                  <div class="card-body">
+                     <h5 class="card-title">Best gadgetdiscount price</h5>
+                     <p class="card-text">Discount upto 50%!</p>
+                     <button type="button" class="btn btnred2 text-white">Shop now</button>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <img src="./imgs/ala.png" alt="..." width="100%">
+               </div>
+            </div>
+         </div>
+         <div class="mb-3" style="background-color: #fafafa; max-width: 300px; margin-left: 10px;">
+            <div class="row g-0">
+               <div class="col-md-8">
+                  <div class="card-body">
+                     <h5 class="card-title">Best gadgetdiscount price</h5>
+                     <p class="card-text">Discount upto 50%!</p>
+                     <button type="button" class="btn btnred2 text-white">Shop now</button>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <img src="./imgs/hammer.png" alt="..." width="100%">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4" style="width: 1000px; margin:0 auto;">
+         <div class="col">
+            <ul class="list-group">
+               <li class="list-group-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"/>
+                     <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                  </svg>
+                  New Arrival
+               </li>
+               <li class="list-group-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                     <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                  </svg>
+                  Top Rated
+               </li>
+               <li class="list-group-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trophy" viewBox="0 0 16 16">
+                     <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"/>
+                  </svg>
+                  Best Seller
+               </li>
+               <li class="list-group-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup" viewBox="0 0 16 16">
+                     <path d="M1 2a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v1h.5A1.5 1.5 0 0 1 16 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-.55a2.5 2.5 0 0 1-2.45 2h-8A2.5 2.5 0 0 1 1 12.5V2zm13 10h.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5H14v8zM13 2H2v10.5A1.5 1.5 0 0 0 3.5 14h8a1.5 1.5 0 0 0 1.5-1.5V2z"/>
+                  </svg>
+                  Hot Deals
+               </li>
+            </ul>
+         </div>
+         <div class="col">
+            <div class="row row-cols-1 row-cols-md-3 g-4" style="width: 700px; margin:0 auto;">
+               <div class="col">
+                  <div class="h-100">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bigger bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                     </svg>
+                     <img src="./imgs/machine.png" class="card-img-top" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="card-text">From 3,000 SR/Pallet</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#cc0000" class="bigger bi bi-cart3" viewBox="0 0 16 16">
+                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#cc0000" class="bigger bi bi-record-circle" viewBox="0 0 16 16">
+                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                           <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="h-100">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bigger bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                     </svg>
+                     <img src="./imgs/sphere.png" class="card-img-top" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="card-text">From 3,000 SR/Pallet</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#cc0000" class="bigger bi bi-cart3" viewBox="0 0 16 16">
+                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#cc0000" class="bigger bi bi-record-circle" viewBox="0 0 16 16">
+                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                           <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="h-100">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bigger bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                     </svg>
+                     <img src="./imgs/cement.png" class="card-img-top" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="card-text">From 3,000 SR/Pallet</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#cc0000" class="bigger bi bi-cart3" viewBox="0 0 16 16">
+                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#cc0000" class="bigger bi bi-record-circle" viewBox="0 0 16 16">
+                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                           <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="h-100">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bigger bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                     </svg>
+                     <img src="./imgs/hadid.png" class="card-img-top" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="card-text">From 3,000 SR/Pallet</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#cc0000" class="bigger bi bi-cart3" viewBox="0 0 16 16">
+                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#cc0000" class="bigger bi bi-record-circle" viewBox="0 0 16 16">
+                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                           <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="h-100">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bigger bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                     </svg>
+                     <img src="./imgs/hdaid.png" class="card-img-top" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="card-text">From 3,000 SR/Pallet</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#cc0000" class="bigger bi bi-cart3" viewBox="0 0 16 16">
+                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#cc0000" class="bigger bi bi-record-circle" viewBox="0 0 16 16">
+                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                           <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="h-100">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bigger bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                     </svg>
+                     <img src="./imgs/toob.png" class="card-img-top" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title">Product Name</h5>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="card-text">From 3,000 SR/Pallet</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#cc0000" class="bigger bi bi-cart3" viewBox="0 0 16 16">
+                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#cc0000" class="bigger bi bi-record-circle" viewBox="0 0 16 16">
+                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                           <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button type="button" class="btn btnred3 text-white">View All Hot Deals</button>
+         </div>
+      </div>
+      <br>
+      <div style="background-color: #fafafa; align-items: center;" class="row">
+         <h3 class="h3 col" style="text-align: start; margin-left: 200px; margin-top: 35px;">Featured Products</h3>
+         <p class="p col p2" style="text-align: end; margin-right: 200px; margin-top: 35px;">View all featured products</p>
+         <!-- Carousel wrapper -->
+         <div
+            id="carouselMultiItemExample"
+            class="carousel slide carousel-dark text-center"
+            data-bs-ride="carousel"
+            style="background-color: #fafafa;"
+            >
+            <!-- Controls -->
+            <div class="d-flex justify-content-center mb-4">
+               <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselMultiItemExample"
+                  data-bs-slide="prev"
+                  >
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+               </button>
+               <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselMultiItemExample"
+                  data-bs-slide="next"
+                  >
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+               </button>
+            </div>
+            <!-- Inner -->
+            <div class="carousel-inner py-4">
+               <!-- Single item -->
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="row row-cols-1 row-cols-md-3 g-4" style="width: 700px; margin:0 auto;">
+                        <div class="col-lg-4">
+                           <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bigger bi bi-heart" viewBox="0 0 16 16">
+                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                              <img src="./imgs/silk.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Product Name</h5>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <p class="card-text">From 3,000 SR/Pallet</p>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#cc0000" class="bigger bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#cc0000" class="bigger bi bi-record-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block">
+                           <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bigger bi bi-heart" viewBox="0 0 16 16">
+                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                              <img src="./imgs/tele.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Product Name</h5>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <p class="card-text">From 3,000 SR/Pallet</p>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#cc0000" class="bigger bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#cc0000" class="bigger bi bi-record-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block">
+                           <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bigger bi bi-heart" viewBox="0 0 16 16">
+                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                              <img src="./imgs/masoora.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Product Name</h5>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <p class="card-text">From 3,000 SR/Pallet</p>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#cc0000" class="bigger bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#cc0000" class="bigger bi bi-record-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Single item -->
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="row row-cols-1 row-cols-md-3 g-4" style="width: 700px; margin:0 auto;">
+                        <div class="col-lg-4 col-md-12">
+                           <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bigger bi bi-heart" viewBox="0 0 16 16">
+                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                              <img src="./imgs/cement.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Product Name</h5>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <p class="card-text">From 3,000 SR/Pallet</p>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#cc0000" class="bigger bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#cc0000" class="bigger bi bi-record-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block">
+                           <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bigger bi bi-heart" viewBox="0 0 16 16">
+                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                              <img src="./imgs/masoora.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Product Name</h5>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <p class="card-text">From 3,000 SR/Pallet</p>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#cc0000" class="bigger bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#cc0000" class="bigger bi bi-record-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block">
+                           <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bigger bi bi-heart" viewBox="0 0 16 16">
+                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                              <img src="./imgs/silk.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Product Name</h5>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <p class="card-text">From 3,000 SR/Pallet</p>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#cc0000" class="bigger bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#cc0000" class="bigger bi bi-record-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Inner -->
+         </div>
+         <!-- Carousel wrapper -->
+      </div>
+      <br>
+      <div class="tractor-container" style="width: 100%; margin:0 auto;">
+         <img src="./imgs/yellow.jpg" alt="" class="parent" style="height: 400px; width: 100%;">
+         <div class="top-left" style="margin-top: 80px;">
+            <p class="p" style="font-weight: bold; color: white; font-size: 24px;">Don't miss our</p>
+            <h1 class="h3" style="color: white; font-size: 72px;">BIG SALE!</h1>
+         </div>
+      </div>
+      <br><br>
+      <div style="padding-left: 200px; padding-right: 200px;" class="row text-center">
+         <h2 class="h2>" style="padding-bottom: 30px; color: #00004d;">Why Build Mart?</h2>
+         <div class="col bigger">
+            <button  style="font-weight: bold; font-size: 12px; color: #00004d; display: block; margin-left: auto; margin-right: auto;" class="btn-why-us">
+               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#00004d" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                  <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+               </svg>
+               <br>Compare prices
+               feature
+            </button>
+            <p class="p3">Use our easy-to-use
+               advanced comparison tool to
+               compare products by
+               features or prices. Chose the
+               best for you and save it in
+               your wish-list
+            </p>
+         </div>
+         <div class="col bigger">
+            <button  style="font-weight: bold; font-size: 12px; color: #00004d; display: block; margin-left: auto; margin-right: auto;" class="btn-why-us">
+               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#00004d" class="bi bi-calculator" viewBox="0 0 16 16">
+                  <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                  <path d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z"/>
+               </svg>
+               <br>Discount coupons
+            </button>
+            <p class="p3">Take advantage of our special
+               Discount Codes and buy your
+               products and services for
+               cheaper. Make sure you
+               complete your registration to
+               start receiving them
+            </p>
+         </div>
+         <div class="col bigger">
+            <button  style="font-weight: bold; font-size: 12px; color: #00004d; display: block; margin-left: auto; margin-right: auto;" class="btn-why-us">
+               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#00004d" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
+                  <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-11zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25.222 25.222 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56V3.224zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009a68.14 68.14 0 0 1 .496.008 64 64 0 0 1 1.51.048zm1.39 1.081c.285.021.569.047.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a65.81 65.81 0 0 1 1.692.064c.327.017.65.037.966.06z"/>
+               </svg>
+               <br>Promotional offers
+            </button>
+            <p class="p3">Our Sellers have always an
+               exclusive deal for our shoppers.
+               Make sure you visit us regularly
+               to get the latest on what they
+               have planned for you
+            </p>
+         </div>
+         <div class="col bigger">
+            <button  style="font-weight: bold; font-size: 12px; color: #00004d; display: block; margin-left: auto; margin-right: auto;" class="btn-why-us">
+               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="#00004d" class="bi bi-shield-check" viewBox="0 0 16 16">
+                  <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                  <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+               </svg>
+               <br>Advance payment
+               protection system
+            </button>
+            <p class="p3">Paying for your purchases
+               through us is safer as we act
+               as an entrusted partner to
+               guarantee the rights of the
+               Buyer and the Seller
+            </p>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer class="text-center text-lg-start bg-light text-muted">
+         <!-- Section: Links  -->
+         <section class="" style="padding-top: 15px;">
+            <div class="container text-center text-md-start mt-5">
+               <!-- Grid row -->
+               <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                     <!-- Content -->
+                     <div class="col">
+                        <img src="./imgs/Image_001.png"/>
+                     </div>
+                     <br>
+                     <p>
+                        <i class="fa fa-phone"></i> +9660000000<br>
+                        <i class="fa fa-envelope-o mr-3"></i> info@Buildmart.com
+                     </p>
+                     <p style="font-weight: bold;">Prince Abdulazim ibn jalawi str
+                        Alsulaimanya
+                        Riyadh
+                        Kingdom of Saudi Arabia
+                     </p>
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                     <!-- Links -->
+                     <h6 class="text-uppercase fw-bold mb-4" style="color: #cc0000;">
+                        Follow us on
+                     </h6>
+                     <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#cc0000" class="bigger bi bi-facebook" viewBox="0 0 16 16">
+                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#cc0000" class="bigger bi bi-twitter" viewBox="0 0 16 16">
+                           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#cc0000" class="bigger bi bi-instagram" viewBox="0 0 16 16">
+                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#cc0000" class="bigger bi bi-linkedin" viewBox="0 0 16 16">
+                           <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                     </div>
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                     <!-- Links -->
+                     <h6 class="text-uppercase fw-bold mb-4" style="color: #cc0000;">
+                        More
+                     </h6>
+                     <p class="footee" style="font-size: 12px;">
+                        <i style="color: #cc0000; font-weight: bold; font-size: 18px;">></i> Delivery Policy<br>
+                     </p>
+                     <p class="footee" style="font-size: 12px;">
+                        <i style="color: #cc0000; font-weight: bold; font-size: 18px;">></i> Returns & Exchange Policy<br>
+                     </p>
+                     <p class="footee" style="font-size: 12px;">
+                        <i style="color: #cc0000; font-weight: bold; font-size: 18px;">></i> Terms & Conditions<br>
+                     </p>
+                     <p class="footee" style="font-size: 12px;">
+                        <i style="color: #cc0000; font-weight: bold; font-size: 18px;">></i> Privacy Policy<br>
+                     </p>
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                     <img src="./imgs/hhh.bmp" width="300px" height="200px"/>
+                  </div>
+                  <!-- Grid column -->
+               </div>
+               <!-- Grid row -->
+            </div>
+         </section>
+         <!-- Section: Links  -->
+         <!-- Copyright -->
+         <div class="text-center p-4 row" style="background-color: rgba(0, 0, 0, 0.05);">
+            <div class="col">
+               <p>© 2021 Build Mart. All rights reserved</p>
+            </div>
+            <div class="col">
+               <p style="font-weight: bold;">
+                  Payment Methods 
+                  <svg xmlns="http://www.w3.org/2000/svg" style="padding-left: 8px;" width="45" height="45" fill="currentColor" class="bi bi-credit-card-2-back-fill bigger-card" viewBox="0 0 16 16">
+                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" style="padding-left: 8px;" class="bi bi-credit-card bigger-card" viewBox="0 0 16 16">
+                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                     <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" style="padding-left: 8px;" class="bi bi-credit-card-2-front-fill bigger-card" viewBox="0 0 16 16">
+                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
+                  </svg>
+               </p>
+            </div>
+         </div>
+         <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+   </body>
+</html>
